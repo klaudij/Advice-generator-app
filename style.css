@@ -10,6 +10,42 @@
 
 
 
+/*********************/
+/**CUSTOM PROPERTIES**/
+/*********************/
+
+:root {
+	--background-c-main:hsl(218, 23%, 16%);
+	--bgc-advice:hsl(217, 19%, 24%);
+
+	--colorh2:white;
+	--colorp:hsl(150, 100%, 66%);
+
+	--button-color:hsl(150, 100%, 66%);
+	--button-shadow:hsla(150, 100%, 66%, 0.468);
+}
+
+
+/*for the light-mode scheme*/
+@media (prefers-color-scheme: light){
+	:root {
+		--background-c-main:#cac8f1;
+		--bgc-advice:#ecebfa;
+	
+		--colorh2:#505D74;
+		--colorp:#635FD6;
+	
+		--button-color:#9e9bfc;
+		--button-shadow:hsla(256, 100%, 66%, 0.468);
+	} 
+}
+
+
+
+/***********************************************************************************/
+
+
+
 /********************/
 /******ANIMATIE******/
 /********************/
@@ -35,7 +71,7 @@
 /*********************/
 
 body {
-	background-color: hsl(218, 23%, 16%);
+	background-color: var(--background-c-main);
 
 	font-family: 'Manrope', sans-serif;
 
@@ -54,8 +90,8 @@ body {
 /**********
 /* styling for the advice area */
 section{
-	background-color: hsl(217, 19%, 24%);
-	color: white;
+	background-color: var(--bgc-advice);
+	color: var(--colorh2);
 
 	text-align: center;
 
@@ -71,7 +107,7 @@ section{
 }
 
 section p {
-	color: hsl(150, 100%, 66%);
+	color: var(--colorp);
 
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -116,7 +152,7 @@ section #desktop {
 /**********
 /* styling for the button */
 section button{
-	background-color: hsl(150, 100%, 66%);
+	background-color: var(--button-color);
 
 	border: none;
 	border-radius: 50%;
@@ -129,7 +165,7 @@ section button{
 }
 
 section button:hover{
-	box-shadow: -2px 3px 22px 8px hsla(150, 100%, 66%, 0.468);
+	box-shadow: -2px 3px 22px 8px var(--button-shadow);
 }
 
 section button:hover img{

@@ -5,10 +5,10 @@ const adviceResult = document.getElementById('adviceResult');
 //get the button
 const adB = document.getElementById('adB');
 
-//function to get random fox
+//function to get random advice
 function getRandomFox(){
     //fetch the API
-    fetch('https://api.adviceslip.com/advice')
+    fetch('https://api.adviceslip.com/advice') //API link
     .then (res=> res.json())
     .then(data => {
         adviceResult.innerHTML = `
