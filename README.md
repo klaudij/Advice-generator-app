@@ -4,8 +4,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Screenshots
 
-<img src="images/mob.png" width="200px" alt="#"> <img src="images/error.png" width="200px" alt="#">
-<img src="images/desk.png" width="500px" alt="#">
+<img src="design/mobiledark.png" width="200px" alt="#"> <img src="design/mobilelight.png" width="200px" alt="#"><br>
+<img src="design/desktopdark.png" width="500px" alt="#"><img src="design/desktoplight.png" width="500px" alt="#">
 
 
 
