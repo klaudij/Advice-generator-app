@@ -27,5 +27,6 @@ Generate a new piece of advice by clicking the dice icon
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
+- CSS custom properties
 - API
 - Javascript
