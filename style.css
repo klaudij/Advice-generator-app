@@ -1,0 +1,149 @@
+/*********/
+/**FONTS**/
+/*********/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+
+/***********************************************************************************/
+
+
+
+/********************/
+/******ANIMATIE******/
+/********************/
+
+@keyframes bounce-7 {
+	0%   { transform: scale(1,1)      translateY(0); }
+	10%  { transform: scale(1.1,.9)   translateY(0); }
+	30%  { transform: scale(.9,1.1)   translateY(-20px); }
+	50%  { transform: scale(1.05,.95) translateY(0); }
+	57%  { transform: scale(1,1)      translateY(-4px); }
+	64%  { transform: scale(1,1)      translateY(0); }
+	100% { transform: scale(1,1)      translateY(0); }
+}
+
+
+
+/***********************************************************************************/
+
+
+
+/*********************/
+/*******STYLING*******/
+/*********************/
+
+body {
+	background-color: hsl(218, 23%, 16%);
+
+	font-family: 'Manrope', sans-serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	height: 100vh;
+	margin: 0;
+	position: relative;
+}
+
+
+
+/**********
+/* styling for the advice area */
+section{
+	background-color: hsl(217, 19%, 24%);
+	color: white;
+
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	border-radius: 15px;
+	position: relative;
+	width: min(70vw, 460px);
+	padding: 0 40px;
+}
+
+section p {
+	color: hsl(150, 100%, 66%);
+
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 0.7rem;
+
+	margin:40px 0 30px 0;
+	
+}
+
+section h2{
+	font-size: 1.5rem;
+	margin: 15px 0;
+}
+
+
+
+/**********
+/* SVG*/
+section svg{
+	margin:20px 0 70px 0;
+	transition: 0.5s;
+}
+
+section #desktop {
+	display: none;
+}
+
+/* changing the mobile svg to desktop svg */
+@media screen and (min-width: 40em){
+
+	section #mobile {
+		display:none;
+	}
+
+	section #desktop {
+		display:block;
+	}
+}
+
+
+
+/**********
+/* styling for the button */
+section button{
+	background-color: hsl(150, 100%, 66%);
+
+	border: none;
+	border-radius: 50%;
+
+	width: 60px;
+	height: 60px;
+
+	position: absolute;
+	bottom: -27px;
+}
+
+section button:hover{
+	box-shadow: -2px 3px 22px 8px hsla(150, 100%, 66%, 0.468);
+}
+
+section button:hover img{
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: bounce-7;
+	animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+
+
+/***********************************************************************************/
+
+
+
+.attribution {  position: absolute; bottom: 0; color: white; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
