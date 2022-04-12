@@ -89,7 +89,7 @@ body {
 
 /**********
 /* styling for the advice area */
-section{
+main{
 	background-color: var(--bgc-advice);
 	color: var(--colorh2);
 
@@ -106,7 +106,7 @@ section{
 	padding: 0 40px;
 }
 
-section p {
+main p {
 	color: var(--colorp);
 
 	text-transform: uppercase;
@@ -117,7 +117,7 @@ section p {
 	
 }
 
-section h2{
+main h2{
 	font-size: 1.5rem;
 	margin: 15px 0;
 }
@@ -126,23 +126,23 @@ section h2{
 
 /**********
 /* SVG*/
-section svg{
+main svg{
 	margin:20px 0 70px 0;
 	transition: 0.5s;
 }
 
-section #desktop {
+main #desktop {
 	display: none;
 }
 
 /* changing the mobile svg to desktop svg */
 @media screen and (min-width: 40em){
 
-	section #mobile {
+	main #mobile {
 		display:none;
 	}
 
-	section #desktop {
+	main #desktop {
 		display:block;
 	}
 }
@@ -151,7 +151,7 @@ section #desktop {
 
 /**********
 /* styling for the button */
-section button{
+main button{
 	background-color: var(--button-color);
 
 	border: none;
@@ -164,11 +164,11 @@ section button{
 	bottom: -27px;
 }
 
-section button:hover{
+main button:hover{
 	box-shadow: -2px 3px 22px 8px var(--button-shadow);
 }
 
-section button:hover img{
+main button:hover img{
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-name: bounce-7;
